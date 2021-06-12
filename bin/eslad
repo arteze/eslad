@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [[ "$1" != "" ]];then
+	curl "https://packages.slackware.com?release=slackware64-current&mode=content&result=1000&extra=on&pasture=on&patches=on&slackware=on&source=on&testing=on&search=$1" --output "$1.html"
+fi
